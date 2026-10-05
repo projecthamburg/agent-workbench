@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.runtime/
+private/
+sessions/
+captures/
+*.sqlite*
+*.db
+__pycache__/
+.DS_Store

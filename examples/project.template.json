@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "design-template-not-executable",
+  "project_id": "<PROJECT_ID>",
+  "objective": "<PROJECT_OBJECTIVE>",
+  "project_root": "<PROJECT_ROOT>",
+  "private_runtime_root": "<PRIVATE_RUNTIME_ROOT>",
+  "roles": {
+    "supervisor": {"provider": "<PROVIDER>", "model_policy": "<POLICY>"},
+    "executor": {"provider": "<PROVIDER>", "fork_from": "<SUPERVISOR_SESSION_ID>"},
+    "evaluator": {"provider": "<PROVIDER>", "model_policy": "<POLICY>"},
+    "curator_researcher": {"provider": "<PROVIDER>", "model_policy": "<POLICY>"}
+  },
+  "limits": {"maximum_cost": "<SPEND_LIMIT>", "maximum_duration": "<TIME_LIMIT>"},
+  "adapter": {
+    "acceptance_rules": "<ACCEPTANCE_RULES>",
+    "safe_stop": "<SAFE_STOP_CONTRACT>",
+    "cleanup_witnesses": "<CLEANUP_CONTRACT>",
+    "recovery_command": "<REVIEWED_PROJECT_RECOVERY_COMMAND>"
+  }
+}
