@@ -4,7 +4,8 @@ A project-independent design for supervised work across several AI tools: a supe
 executor forked when implementation begins, an evaluator/advisor, a curator/researcher, and a
 human recovery terminal.
 
-**Status: design scaffold.** There is no bootable launcher, installed plugin, native pause panel
+**Status: tested cooperative-control prototype.** The persistent lease/coordinator and small
+native pause-request panel are implemented. There is no bootable launcher, installed plugin
 or qualified unattended workflow in this revision. The first worked example is an AI-visibility
 research pipeline; its browser and network rules belong to an adapter, not to the generic core.
 
@@ -20,3 +21,17 @@ See [design](docs/DESIGN.md), [requirements](docs/REQUIREMENTS.md),
 Public examples contain placeholders. Credentials, personal identifiers, native sessions, client
 evidence and screenshots belong in a private project runtime outside the public repository.
 Do not copy a private project history into this repository to create the worked example.
+
+The POSIX standard-library core requires Python 3.9 or later. The panel additionally needs a
+working Tk installation; imports alone do not establish GUI compatibility. Run the 46 offline
+contract tests from this directory:
+
+```sh
+python3 -m unittest discover -s tests -p 'test_workbench*.py' -v
+```
+
+Read the [lease contract](docs/MACHINE-LEASE.md), [coordinator protocol](docs/COORDINATOR.md)
+and [panel limits](docs/PANEL.md) before adopting them. The application must supply semantic
+restoration checks and route every shared-machine action through its coordinator. Those
+adapter integrations are not supplied here. See the [implementation journal](journal/2026-10-05-cooperative-control.md)
+for evidence, review repairs and unresolved assumptions.
