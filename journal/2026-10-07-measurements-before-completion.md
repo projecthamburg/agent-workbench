@@ -15,3 +15,9 @@ The human requested two second opinions after the supervisor's investigation. Re
 Biases addressed: expected-city confirmation, IP-database-city attribution, proxy/peer conflation, completion-as-correctness and treating generic timeouts as provider intent. Remaining limits: sparse samples, provider-controlled diagnostic responses, incomplete inventories, uncertain same-site binding and geographical database estimates. Confidence is high only for recorded values with verified provenance; hidden-origin location remains unresolved.
 
 This is an operational case study, not a controlled evaluation of multi-agent efficiency. No claim of token savings or superior outcomes is established by this one case. The investigation and review are still in progress at this entry; a reconciliation will be recorded separately.
+
+## Reconciliation
+
+Both external reviewers returned opinions; the supervisor checked their corrections against source files. A controlled remote diagnostic produced matching exit witnesses and provider serving-site codes, and its transport cleanup was verified. The final determination accepts those observations while withholding hidden-origin or model-compute claims. Public measurement metadata and selected historical results were retained; neither counts nor timing bounds were treated as current city proof. Fresh browser diagnostic attempts failed and remain explicit gaps. The client supplement contains static HTML, structured JSON and a PDF rendered offline; private credentials, complete machine logs and implementation details are excluded.
+
+The report includes actor mistakes, packet-budget deviations, source hashes and review reconciliation. Independent opinions improved wording and exposed omissions, but raw-source verification was still necessary. No universal efficiency or reliability conclusion follows from this single working example.
